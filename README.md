@@ -1,141 +1,115 @@
-ETL Pipeline: World’s Largest Banks Data Processing
-IBM Data Engineering Specialization – Portfolio Project
+# ETL Pipeline: World’s Largest Banks Data Processing  
+### IBM Data Engineering Specialization – Portfolio Project
 
-This project demonstrates a complete Extract, Transform, Load (ETL) workflow using Python, web scraping, data cleaning, currency conversion, structured logging, and database loading.
-The goal is to extract the top 10 largest banks in the world by market capitalization (USD), transform the values into GBP, EUR, and INR, and load the processed data into CSV and a SQLite database.
+This project demonstrates a complete Extract, Transform, Load (ETL) workflow using Python. The objective is to extract the top 10 largest banks by market capitalization (USD), transform the data into GBP, EUR, and INR using the provided exchange_rate.csv file, and load the processed data into both CSV and SQLite database formats. A detailed process log is also maintained throughout execution.
 
-📌 Project Objectives
+---
 
-Extract market capitalization data for the world’s top banks from an archived web source.
+## Project Objectives
+- Extract market capitalization data from an archived web source.  
+- Clean and format the raw HTML table data.  
+- Convert USD market capitalization values to GBP, EUR, and INR.  
+- Save the transformed data into a CSV file and SQLite database.  
+- Maintain process history through a structured log file (code_log.txt).  
+- Present the project as a reproducible ETL pipeline.
 
-Clean and structure the raw data into a pandas DataFrame.
+---
 
-Convert market capitalization from USD → GBP, EUR, INR using exchange_rate.csv.
+## Tech Stack
+- Python  
+- BeautifulSoup (bs4)  
+- Requests  
+- Pandas  
+- NumPy  
+- SQLite3  
+- Google Colab  
+- GitHub  
 
-Load the final dataset into:
+---
 
-A CSV file
+## Repository Structure
 
-A SQLite database (Banks.db)
-
-Maintain execution history using a detailed code_log.txt.
-
-Present the project as a real-world portfolio ETL pipeline.
-
-🛠 Tech Stack
-
-Python
-
-BeautifulSoup (bs4) — Web scraping
-
-Requests — Data extraction
-
-Pandas / NumPy — Data transformation
-
-SQLite3 — Database creation & loading
-
-Google Colab — Development environment
-
-Markdown + GitHub — Documentation & portfolio presentation
-
-📂 Repository Structure
 world-top-banks-etl/
 │
 ├── Data/
-│   ├── exchange_rate.csv
-│   ├── Largest_banks_data.csv
-│   └── Banks.db
+│ ├── exchange_rate.csv
+│ ├── Largest_banks_data.csv
+│ └── Banks.db
 │
 ├── Notebook/
-│   └── world_top_banks.ipynb
+│ └── world_top_banks.ipynb
 │
 ├── Results/
-│   ├── extract.png
-│   ├── transform.png
-│   ├── save_csv.png
-│   ├── queries_results.png
-│   ├── files_log.png
-│   └── etl_process_log.png
+│ ├── extract.png
+│ ├── transform.png
+│ ├── save_csv.png
+│ ├── queries_results.png
+│ ├── files_log.png
+│ └── etl_process_log.png
 │
 ├── code_log.txt
 └── README.md
 
-🔄 ETL Workflow Overview
-1️⃣ Extract
+yaml
+Copy code
 
-Scrape table under "By market capitalization" from the archived Wikipedia page.
+---
 
-Clean text, remove footnotes, parse numbers, and select top 10 rows.
+## ETL Workflow
 
-2️⃣ Transform
+### 1. Extract
+- Scraped the necessary data from the “By market capitalization” table available on an archived Wikipedia page.  
+- Cleaned text values, removed non-numeric characters, and selected the top 10 banks based on market cap in USD.
 
-Load exchange rate CSV
+### 2. Transform
+- Loaded exchange rates from exchange_rate.csv.  
+- Calculated market capitalization in GBP, EUR, and INR.  
+- Rounded transformed values to two decimal places.  
+- Reordered DataFrame columns to match project requirements.
 
-Convert MC_USD_Billion to:
+### 3. Load
+- Saved the final DataFrame to Largest_banks_data.csv.  
+- Loaded the processed data into Banks.db under the table name Largest_banks.
 
-MC_GBP_Billion
+### 4. Logging
+Each major step of the ETL workflow writes a timestamped entry to code_log.txt using the format:
 
-MC_EUR_Billion
+YYYY-MM-DD HH:MM:SS : <message>
 
-MC_INR_Billion
+yaml
+Copy code
 
-Round values to 2 decimal places
+---
 
-Reorder final columns
-
-3️⃣ Load
-
-Save transformed dataset to Largest_banks_data.csv
-
-Load final table into Banks.db under table name Largest_banks
-
-4️⃣ Logging
-
-Each major step writes an entry to code_log.txt in the format:
-
-YYYY-MM-DD HH:MM:SS : <status message>
-
-▶️ How to Run the Project
-
-Open the notebook:
-
+## How to Run the Project
+1. Open the notebook file located at:
 Notebook/world_top_banks.ipynb
 
+yaml
+Copy code
+2. Run all cells sequentially in Google Colab.  
+3. Ensure exchange_rate.csv is available in the Data directory.  
+4. Outputs and logs will be generated in their respective folders.
 
-Run all cells top to bottom in Google Colab.
+---
 
-Make sure exchange_rate.csv is located inside the Data folder.
+## Results and Evidence
+All screenshots showing the extraction, transformation, CSV creation, SQL queries, and logging have been stored in the Results directory for verification.
 
-Outputs will appear in the Data folder and logs in the repo root.
+---
 
-📸 Results & Screenshots
+## Skills Demonstrated
+- Web scraping  
+- Data cleaning and transformation  
+- ETL pipeline development  
+- SQL database creation and querying  
+- Using Python libraries for automation  
+- Structured logging  
+- Project organization and documentation  
+- Git and GitHub version control
 
-Screenshots of extraction, transformation, saving, SQL outputs, and logs are available in the Results/ directory.
+---
 
-These help demonstrate work for peer review and portfolio presentation.
-
-📘 Key Skills Demonstrated
-
-Web scraping using BeautifulSoup
-
-ETL Pipeline development
-
-Data cleaning & transformation
-
-Working with external CSV sources
-
-SQL database creation & loading
-
-Structured logging for ETL processes
-
-Organizing a project for real-world portfolios
-
-Git & GitHub best practices
-
-🎯 About This Project
-
-This project was completed as part of the IBM Data Engineering Specialization and uploaded to GitHub as a portfolio project to demonstrate practical ETL development capability using Python and SQL.
-
-⭐ If you like this project
-
-Feel free to star ⭐ the repo or connect with me on LinkedIn!
+## About This Project
+This ETL project was completed as part of the IBM Data Engineering Specialization.  
+It has been structured and documented to serve as a portfolio project sho
