@@ -1,115 +1,127 @@
 # ETL Pipeline: World’s Largest Banks Data Processing  
 ### IBM Data Engineering Specialization – Portfolio Project
 
-This project demonstrates a complete Extract, Transform, Load (ETL) workflow using Python. The objective is to extract the top 10 largest banks by market capitalization (USD), transform the data into GBP, EUR, and INR using the provided exchange_rate.csv file, and load the processed data into both CSV and SQLite database formats. A detailed process log is also maintained throughout execution.
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=abdullahahmadd.world-top-banks-etl)
+![ETL](https://img.shields.io/badge/ETL%20Pipeline-purple)
+![Web Scraping](https://img.shields.io/badge/Web%20Scraping-darkred)
+![Python](https://img.shields.io/badge/Python-blue)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-yellow)
+![Pandas](https://img.shields.io/badge/Pandas-green)
+![NumPy](https://img.shields.io/badge/NumPy-orange)
+![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-red)
+![SQLite](https://img.shields.io/badge/SQLite-lightgrey)
+
+---
+
+This project demonstrates a complete Extract, Transform, Load (ETL) workflow using Python. The goal is to extract the top 10 largest banks by market capitalization (USD), transform the data into GBP, EUR, and INR using the provided `exchange_rate.csv`, and load the processed data into both CSV and SQLite database formats. A detailed process log is also maintained throughout execution.
+
+---
+
+## Table of Contents
+1. [Project Objectives](#project-objectives)  
+2. [Tools & Technologies](#tools--technologies)  
+3. [Libraries Used](#libraries-used)
+4. [Skills Demonstrated](#skills-demonstrated)     
+5. [How to Run the Project](#how-to-run-the-project)  
+6. [Results](#results)  
+7. [ETL Workflow](#etl-workflow)
+8. [About This Project](#about-this-project)
 
 ---
 
 ## Project Objectives
 - Extract market capitalization data from an archived web source.  
-- Clean and format the raw HTML table data.  
-- Convert USD market capitalization values to GBP, EUR, and INR.  
-- Save the transformed data into a CSV file and SQLite database.  
-- Maintain process history through a structured log file (code_log.txt).  
-- Present the project as a reproducible ETL pipeline.
-
+- Clean and structure the raw data into a pandas DataFrame.  
+- Convert USD market capitalization into GBP, EUR, and INR.  
+- Save transformed data into a CSV file and SQLite database.  
+- Log all major steps using a structured log file (`code_log.txt`).  
+- Provide a clean, reproducible ETL workflow.
 ---
 
-## Tech Stack
-- Python  
-- BeautifulSoup (bs4)  
-- Requests  
-- Pandas  
-- NumPy  
-- SQLite3  
+## Tools & Technologies
 - Google Colab  
-- GitHub  
+- Python  
+- SQLite  
 
 ---
 
-## Repository Structure
+## Libraries Used
+- `requests`  
+- `BeautifulSoup (bs4)`  
+- `pandas`  
+- `numpy`  
+- `sqlite3`  
+- `datetime`  
 
-world-top-banks-etl/
-│
-├── Data/
-│ ├── exchange_rate.csv
-│ ├── Largest_banks_data.csv
-│ └── Banks.db
-│
-├── Notebook/
-│ └── world_top_banks.ipynb
-│
-├── Results/
-│ ├── extract.png
-│ ├── transform.png
-│ ├── save_csv.png
-│ ├── queries_results.png
-│ ├── files_log.png
-│ └── etl_process_log.png
-│
-├── code_log.txt
-└── README.md
+---
 
-yaml
-Copy code
+## Skills Demonstrated
+- Web scraping using BeautifulSoup  
+- Data cleaning and transformation with pandas  
+- ETL workflow creation  
+- SQL database loading and querying  
+- Structured logging of workflow events  
+- Organizing and documenting a complete project for portfolio use  
+- GitHub repository management and project structuring
 
 ---
 
 ## ETL Workflow
 
 ### 1. Extract
-- Scraped the necessary data from the “By market capitalization” table available on an archived Wikipedia page.  
-- Cleaned text values, removed non-numeric characters, and selected the top 10 banks based on market cap in USD.
+- Scraped the “By market capitalization” table from the archived Wikipedia page.  
+- Cleaned values and extracted the top 10 largest banks by USD market cap.
 
 ### 2. Transform
-- Loaded exchange rates from exchange_rate.csv.  
+- Loaded exchange rates from `exchange_rate.csv`.  
 - Calculated market capitalization in GBP, EUR, and INR.  
 - Rounded transformed values to two decimal places.  
 - Reordered DataFrame columns to match project requirements.
 
 ### 3. Load
-- Saved the final DataFrame to Largest_banks_data.csv.  
-- Loaded the processed data into Banks.db under the table name Largest_banks.
+- Saved the final DataFrame to `Largest_banks_data.csv`.  
+- Loaded the processed data into `Banks.db` under the table name `Largest_banks`.
 
 ### 4. Logging
-Each major step of the ETL workflow writes a timestamped entry to code_log.txt using the format:
-
+All major steps write timestamped entries into `code_log.txt` using:
 YYYY-MM-DD HH:MM:SS : <message>
-
-yaml
-Copy code
 
 ---
 
 ## How to Run the Project
-1. Open the notebook file located at:
+1. Open the notebook located at:  
 Notebook/world_top_banks.ipynb
-
-yaml
-Copy code
-2. Run all cells sequentially in Google Colab.  
-3. Ensure exchange_rate.csv is available in the Data directory.  
-4. Outputs and logs will be generated in their respective folders.
+2. Run all cells in Google Colab or Jupyter Notebook.  
+3. Ensure `exchange_rate.csv` is present in the Data directory.  
+4. The output CSV, database, and logs will be recreated upon execution.
 
 ---
 
-## Results and Evidence
-All screenshots showing the extraction, transformation, CSV creation, SQL queries, and logging have been stored in the Results directory for verification.
+## Results
 
----
+Below are the results showing each phase of the ETL workflow.  
+These images are stored in the `Results/` directory.
 
-## Skills Demonstrated
-- Web scraping  
-- Data cleaning and transformation  
-- ETL pipeline development  
-- SQL database creation and querying  
-- Using Python libraries for automation  
-- Structured logging  
-- Project organization and documentation  
-- Git and GitHub version control
+### Extract Phase
+![Extract](Results/extract.png)
+
+### Transform Phase
+![Transform](Results/transform.png)
+
+### Save to CSV
+![Save CSV](Results/save_csv.png)
+
+### SQL Query Results
+![Query Results](Results/queries_results.png)
+
+### Files Generated
+![Files Log](Results/files_log.png)
+
+### ETL Process Log
+![ETL Log](Results/etl_process_log.png)
 
 ---
 
 ## About This Project
-This ETL project was completed as part of the IBM Data Engineering Specialization.  
-It has been structured and documented to serve as a portfolio project sho
+This ETL pipeline was completed as part of the IBM Data Engineering Specialization.  
+The project has been structured, documented, and uploaded to GitHub as a portfolio project showcasing practical data engineering skills.
