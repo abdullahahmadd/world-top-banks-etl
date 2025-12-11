@@ -102,11 +102,11 @@ Below are the results showing each phase of the ETL workflow.
 These images are stored in the `Results/` directory.
 
 ### Extract Phase
-![Extract](Results/extract.png)  
+![Extract](Results/Extract.png)  
 *Shows the successful extraction of the “By market capitalization” table and the top 10 banks selected from the webpage.*
 
 ### Transform Phase
-![Transform](Results/transform.png)  
+![Transform](Results/Transform.png)  
 *Displays the transformed DataFrame with GBP, EUR, and INR conversions applied to the USD market capitalization values.*
 
 ### Save to CSV
@@ -115,15 +115,15 @@ These images are stored in the `Results/` directory.
 
 ### SQL Query Results
 ![Query Results](Results/queries_results.png)  
-Shows the SQL outputs for: full table retrieval, average GBP market cap, and top 5 bank names.
+*Shows the SQL outputs for: full table retrieval, average GBP market cap, and top 5 bank names.*
 
 ### Files Generated
 ![Files Log](Results/files_log.png)  
-Displays the generated output files in the workspace, including the CSV file, SQLite database, and related artifacts.
+*Displays the generated output files in the workspace, including the CSV file, SQLite database, and related artifacts.*
 
 ### ETL Process Log
 ![ETL Log](Results/etl_process_log.png)  
-Captures the contents of `code_log.txt`, showing timestamped logs for each stage of the ETL pipeline.
+*Captures the contents of `code_log.txt`, showing timestamped logs for each stage of the ETL pipeline.*
 
 ---
 
