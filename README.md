@@ -101,22 +101,57 @@ Notebook/world_top_banks.ipynb
 Below are the results showing each phase of the ETL workflow.  
 All images are located in the `Results/` directory.
 
-### ETL Workflow Results Overview
+### 1. Extract Phase
 
-| Extract Phase | Transform Phase |
-|--------------|----------------|
-| ![Extract](Results/extract.png) | ![Transform](Results/transform.png) |
-| Shows the successful extraction of the “By market capitalization” table and the top 10 banks selected from the webpage. | Displays the transformed DataFrame with GBP, EUR, and INR conversions applied to the USD market capitalization values. |
+| Extract Phase |
+|--------------|
+| ![Extract](Results/extract.png) |
+| Shows the successful extraction of the “By market capitalization” table and the top 10 banks selected from the webpage. |
 
-| Save to CSV | SQL Query Results |
-|-------------|------------------|
-| ![Save CSV](Results/save_csv.png) | ![Query Results](Results/queries_results.png) |
-| Confirms that the final processed DataFrame was saved to `Largest_banks_data.csv`. | Shows the SQL outputs for full table retrieval, average GBP market cap, and the top 5 bank names. |
+---
 
-| Files Generated | ETL Process Log |
-|----------------|-----------------|
-| ![Files Log](Results/files_log.png) | ![ETL Log](Results/etl_process_log.png) |
-| Displays all generated output files, including the CSV, SQLite database, and related project artifacts. | Captures the contents of `code_log.txt`, showing timestamped logs for each stage of the ETL pipeline. |
+### 2. Transform Phase
+
+| Transform Phase |
+|----------------|
+| ![Transform](Results/transform.png) |
+| Displays the transformed DataFrame with GBP, EUR, and INR conversions applied to the USD market capitalization values. |
+
+---
+
+### 3. Save to CSV
+
+| Save to CSV |
+|-------------|
+| ![Save CSV](Results/save_csv.png) |
+| Confirms that the final processed DataFrame was saved to `Largest_banks_data.csv`. |
+
+---
+
+### 4. SQL Query Results
+
+| SQL Query Results |
+|------------------|
+| ![Query Results](Results/queries_results.png) |
+| Shows the SQL outputs for full table retrieval, average GBP market cap, and the top 5 bank names. |
+
+---
+
+### 5. Files Generated
+
+| Files Generated |
+|----------------|
+| ![Files Log](Results/files_log.png) |
+| Displays all generated output files, including the CSV, SQLite database, and related project artifacts. |
+
+---
+
+### 6. ETL Process Log
+
+| ETL Process Log |
+|-----------------|
+| ![ETL Log](Results/etl_process_log.png) |
+| Captures the contents of `code_log.txt`, showing timestamped logs for each stage of the ETL pipeline. |
 
 ---
 
