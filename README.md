@@ -102,28 +102,28 @@ Below are the results showing each phase of the ETL workflow.
 These images are stored in the `Results/` directory.
 
 ### Extract Phase
-![Extract](Results/Extract.png)
-Shows the successful extraction of the “By market capitalization” table and the top 10 banks selected from the webpage.
+![Extract](Results/extract.png)  
+*Shows the successful extraction of the “By market capitalization” table and the top 10 banks selected from the webpage.*
 
 ### Transform Phase
-![Transform](Results/Transform.png)
-Displays the transformed DataFrame with GBP, EUR, and INR conversions applied to the USD market capitalization values.
+![Transform](Results/transform.png)  
+*Displays the transformed DataFrame with GBP, EUR, and INR conversions applied to the USD market capitalization values.*
 
 ### Save to CSV
-![Save CSV](Results/save_csv.png)
-Confirms that the final processed DataFrame was saved to Largest_banks_data.csv.
+![Save CSV](Results/save_csv.png)  
+*Confirms that the final processed DataFrame was saved to `Largest_banks_data.csv`.*
 
 ### SQL Query Results
-![Query Results](Results/queries_results.png)
+![Query Results](Results/queries_results.png)  
 Shows the SQL outputs for: full table retrieval, average GBP market cap, and top 5 bank names.
 
 ### Files Generated
-![Files Log](Results/files_log.png)
-Displays the generated output files in the workspace, including CSV, database, and supporting resources.
+![Files Log](Results/files_log.png)  
+Displays the generated output files in the workspace, including the CSV file, SQLite database, and related artifacts.
 
 ### ETL Process Log
-![ETL Log](Results/etl_process_log.png
-Captures the contents of code_log.txt, showing timestamped logs for each stage of the ETL pipeline.
+![ETL Log](Results/etl_process_log.png)  
+Captures the contents of `code_log.txt`, showing timestamped logs for each stage of the ETL pipeline.
 
 ---
 
