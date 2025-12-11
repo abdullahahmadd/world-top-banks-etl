@@ -39,6 +39,7 @@ This project demonstrates a complete Extract, Transform, Load (ETL) workflow usi
 ---
 
 ## Tools & Technologies
+- ETL Process
 - Google Colab  
 - Python  
 - SQLite  
@@ -61,8 +62,6 @@ This project demonstrates a complete Extract, Transform, Load (ETL) workflow usi
 - ETL workflow creation  
 - SQL database loading and querying  
 - Structured logging of workflow events  
-- Organizing and documenting a complete project for portfolio use  
-- GitHub repository management and project structuring
 
 ---
 
