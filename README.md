@@ -96,50 +96,83 @@ Notebook/world_top_banks.ipynb
 
 ---
 
-## Results
+## SQL Analysis Results  
+All SQL outputs are stored in the `Cylistic_analysis_results/` folder.
 
-Below are the results showing each phase of the ETL workflow.  
-All images are located in the `Results/` directory.
-
-| 1. Extract Phase |
-|--------------|
-| ![Extract](Results/Extract.png) |
-| Shows the successful extraction of the “By market capitalization” table and the top 10 banks selected from the webpage. |
+| 1. Total Rows Loaded |
+|----------------------|
+| ![Total Rows](Cylistic_analysis_results/total_rows_sql.png) |
+| Shows the number of successfully imported rows in MySQL after loading the dataset. |
 
 ---
 
-| 2. Transform Phase |
-|----------------|
-| ![Transform](Results/Transform.png) |
-| Displays the transformed DataFrame with GBP, EUR, and INR conversions applied to the USD market capitalization values. |
+| 2. Missing Values Check |
+|-------------------------|
+| ![Missing Values](Cylistic_analysis_results/missing_values_sql.png) |
+| Displays the count of missing or NULL values across all dataset columns. |
 
 ---
 
-| 3. Save to CSV |
-|-------------|
-| ![Save CSV](Results/save_csv.png) |
-| Confirms that the final processed DataFrame was saved to `Largest_banks_data.csv`. |
+| 3. First 10 Rows Preview |
+|--------------------------|
+| ![Preview 10 Rows](Cylistic_analysis_results/10_rows_sql.png) |
+| Shows a preview of the first 10 rows to verify data formatting and integrity. |
 
 ---
 
-| 4. SQL Query Results |
-|------------------|
-| ![Query Results](Results/queries_results.png) |
-| Shows the SQL outputs for full table retrieval, average GBP market cap, and the top 5 bank names. |
+| 4. Average Ride Duration (SQL) |
+|--------------------------------|
+| ![Average Ride Duration](Cylistic_analysis_results/avg_ride_minutes_sql.png) |
+| Calculates the mean ride duration across all rides using SQL aggregate functions. |
 
 ---
 
-| 5. Files Generated |
-|----------------|
-| ![Files Log](Results/files_log.png) |
-| Displays all generated output files, including the CSV, SQLite database, and related project artifacts. |
+| 5. Maximum Ride Duration |
+|---------------------------|
+| ![Max Ride Duration](Cylistic_analysis_results/max_ride_minutes.png) |
+| Identifies the longest ride duration recorded in the dataset. |
 
 ---
 
-| 6. ETL Process Log |
-|-----------------|
-| ![ETL Log](Results/etl_process_log.png) |
-| Captures the contents of `code_log.txt`, showing timestamped logs for each stage of the ETL pipeline. |
+| 6. Ride Length (Seconds & Minutes) |
+|------------------------------------|
+| ![Ride Length in Seconds](Cylistic_analysis_results/ride_length_and_secs_sql.png) |
+| Shows computed ride lengths converted into seconds and minutes for deeper analysis. |
+
+---
+
+| 7. Most Active Day of Week |
+|-----------------------------|
+| ![Most Active Day](Cylistic_analysis_results/hightest_day_of_week_sql.png) |
+| Reveals which weekday had the highest number of total rides. |
+
+---
+
+| 8. Avg Ride Duration — Member vs Casual |
+|-----------------------------------------|
+| ![Avg Ride Duration User Type](Cylistic_analysis_results/member_casual_avg_ride_mints_Sql.png) |
+| Compares average ride duration between casual riders and annual members. |
+
+---
+
+| 9. Total Rides — Member vs Casual |
+|-----------------------------------|
+| ![Total Rides User Type](Cylistic_analysis_results/member_casual_total_rides_sql.png) |
+| Displays total trip counts for each rider category (member vs casual). |
+
+---
+
+| 10. Hourly Ride Distribution |
+|------------------------------|
+| ![Hourly Ride Distribution](Cylistic_analysis_results/hightest_rides_by_hour_sql.png) |
+| Shows peak riding hours, indicating commuting and leisure time patterns. |
+
+---
+
+| 11. Monthly Ride Distribution |
+|-------------------------------|
+| ![Monthly Ride Distribution](Cylistic_analysis_results/hightest_rides_by_month_sql.png) |
+| Displays the number of rides per month to highlight seasonal trends. |
 
 ---
 
