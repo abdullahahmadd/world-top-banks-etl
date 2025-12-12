@@ -1,5 +1,5 @@
-# ETL Pipeline: World’s Largest Banks Data Processing  
-### IBM Data Engineering Specialization – Portfolio Project
+# ⚙️ ETL Pipeline: World’s Largest Banks Data Processing  
+### 🎓 IBM Data Engineering Specialization – Portfolio Project
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=abdullahahmadd.world-top-banks-etl)
 ![ETL](https://img.shields.io/badge/ETL%20Pipeline-purple)
@@ -17,19 +17,19 @@ This project demonstrates a complete Extract, Transform, Load (ETL) workflow usi
 
 ---
 
-## Table of Contents
-1. [Project Objectives](#project-objectives)  
-2. [Tools & Technologies](#tools--technologies)  
-3. [Libraries Used](#libraries-used)
-4. [Skills Demonstrated](#skills-demonstrated)     
-5. [How to Run the Project](#how-to-run-the-project)  
-6. [Results](#results)  
-7. [ETL Workflow](#etl-workflow)
-8. [About This Project](#about-this-project)
+## 📑 Table of Contents
+1. [Project Objectives](#-project-objectives)  
+2. [Tools & Technologies](#-tools--technologies)  
+3. [Libraries Used](#-libraries-used)
+4. [Skills Demonstrated](#-skills-demonstrated)     
+5. [How to Run the Project](#-how-to-run-the-project)  
+6. [Results](#-results)  
+7. [ETL Workflow](#-etl-workflow)
+8. [About This Project](#-about-this-project)
 
 ---
 
-## Project Objectives
+## 🎯 Project Objectives
 - Extract market capitalization data from an archived web source.  
 - Clean and structure the raw data into a pandas DataFrame.  
 - Convert USD market capitalization into GBP, EUR, and INR.  
@@ -46,7 +46,7 @@ This project demonstrates a complete Extract, Transform, Load (ETL) workflow usi
 
 ---
 
-## Libraries Used
+## 📚 Libraries Used
 - `requests`  
 - `BeautifulSoup (bs4)`  
 - `pandas`  
@@ -56,7 +56,7 @@ This project demonstrates a complete Extract, Transform, Load (ETL) workflow usi
 
 ---
 
-## Skills Demonstrated
+## 💡 Skills Demonstrated
 - Web scraping using BeautifulSoup  
 - Data cleaning and transformation with pandas  
 - ETL workflow creation  
@@ -65,7 +65,7 @@ This project demonstrates a complete Extract, Transform, Load (ETL) workflow usi
 
 ---
 
-## ETL Workflow
+## 🔄 ETL Workflow
 
 ### 1. Extract
 - Scraped the “By market capitalization” table from the archived Wikipedia page.  
@@ -87,7 +87,7 @@ YYYY-MM-DD HH:MM:SS : <message>
 
 ---
 
-## How to Run the Project
+## ▶️ How to Run the Project
 1. Open the notebook located at:  
 Notebook/world_top_banks.ipynb
 2. Run all cells in Google Colab or Jupyter Notebook.  
@@ -96,7 +96,7 @@ Notebook/world_top_banks.ipynb
 
 ---
 
-## Results
+## 📊 Results
 
 Below are the results showing each phase of the ETL workflow.  
 All images are located in the `Results/` directory.
@@ -143,6 +143,6 @@ All images are located in the `Results/` directory.
 
 ---
 
-## About This Project
-This ETL pipeline was completed as part of the IBM Data Engineering Specialization.  
-The project has been structured, documented, and uploaded to GitHub as a portfolio project showcasing practical data engineering skills.
+## ℹ️ About This Project
+- This ETL pipeline project is completed as part of the **IBM Data Engineering Specialization**.  
+- The project has been structured, documented, and uploaded to GitHub as a portfolio project showcasing practical data engineering skills.
