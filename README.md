@@ -19,7 +19,7 @@ This project demonstrates a complete Extract, Transform, Load (ETL) workflow usi
 
 ## 📑 Table of Contents
 1. [Project Objectives](#-project-objectives)  
-2. [Tools & Technologies](#-tools--technologies)  
+2. [Tools & Technologies Used](#-tools--technologies-used)  
 3. [Libraries Used](#-libraries-used)
 4. [Skills Demonstrated](#-skills-demonstrated)     
 5. [How to Run the Project](#-how-to-run-the-project)  
@@ -38,7 +38,7 @@ This project demonstrates a complete Extract, Transform, Load (ETL) workflow usi
 - Provide a clean, reproducible ETL workflow.
 ---
 
-## Tools & Technologies
+## 🛠️ Tools & Technologies Used
 - ETL Process
 - Google Colab  
 - Python  
